@@ -1,0 +1,204 @@
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.checkout_tab {
+  .nav {
+    .nav-item {
+      margin-right: 20px;
+    }
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    .tab_btn {
+      width: 300px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #184363 !important;
+      background: #ededed;
+    }
+    .active {
+      background-color: #184363 !important;
+      color: white !important;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// Tab content area css start
+.tab_content_area {
+  //shipping page css start
+  .shipping_page_containers {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 100px;
+    .shipping_form_area {
+      flex: 1;
+      .sipping_page_title {
+        border-bottom: 1px solid #e2dcdc;
+        padding-bottom: 6px;
+        h2 {
+          font-size: 2.2rem;
+          font-weight: 600;
+          color: #184363;
+        }
+        h4 {
+          font-weight: 600;
+          color: #184363;
+        }
+        p {
+          margin: 0;
+        }
+        .note {
+          display: flex;
+          align-items: center;
+          margin: 10px 0px;
+          span {
+            margin-left: 9px;
+          }
+        }
+      }
+      .shipping_form_containers {
+        margin-top: 20px;
+        .radio_btn {
+          display: flex;
+          align-items: center;
+          .form-check label {
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+        .form {
+          background: white;
+          padding: 20px;
+          border-radius: 5px;
+          margin-top: 20px;
+          label {
+            font-weight: 600;
+            font-size: 15px;
+          }
+          input,
+          select,
+          textarea {
+            border: none;
+            background: #f5f6fe;
+            padding: 10px;
+            outline: none !important;
+            color: black;
+          }
+          .checkout_tab_toggle_btn {
+            button {
+              border: none;
+              background: #f2971f;
+              font-weight: 700;
+              font-size: 15px;
+              padding: 10px 30px;
+              border-radius: 5px;
+              margin-top: 10px;
+              color: white;
+              transition: 0.3s;
+              &:hover {
+                background-color: #184363 !important;
+              }
+            }
+          }
+        }
+      }
+      .payment_information_container {
+        max-width: 700px;
+        margin-top: 43px;
+        .title {
+          max-width: 450px;
+          border-bottom: 1px solid #e2dcdc;
+          margin-bottom: 15px;
+          h2 {
+            font-weight: 600;
+            color: #184363 !important;
+          }
+        }
+        .payment_method_container {
+          margin-top: 15px;
+          h4 {
+            font-weight: 600;
+            color: #184363 !important;
+          }
+          .payment_system {
+            margin-top: 15px;
+            .form-check {
+              margin-bottom: 10px !important;
+
+              label {
+                font-weight: 500;
+                font-size: 16px;
+                color: #184363 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //shipping page css end
+
+  //confirmation page css end
+}
+
+// Tab content area css end
+
+//for responsive
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .checkout_tab {
+    .nav {
+      flex-direction: column !important;
+      align-items: center !important;
+      margin: 0px 10px;
+      li {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      .tab_btn {
+        width: 100%;
+      }
+    }
+  }
+  .shipping_rows {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 475px) {
+  .shipping_page_containers .shipping_form_area .sipping_page_title {
+    margin: 0px 10px;
+  }
+  .radio_btn {
+    margin: 0px 10px;
+  }
+  .tab_content_area
+    .shipping_page_containers
+    .shipping_form_area
+    .payment_information_container
+    .payment_method_container {
+    padding: 0px 10px;
+  }
+  .tab_content_area
+    .shipping_page_containers
+    .shipping_form_area
+    .payment_information_container
+    .title {
+    padding: 0px 10px;
+  }
+  .tab_content_area
+    .shipping_page_containers
+    .shipping_form_area
+    .shipping_form_containers
+    .form
+    .checkout_tab_toggle_btn
+    button {
+    font-size: 10px;
+    padding: 10px 24px;
+  }
+}

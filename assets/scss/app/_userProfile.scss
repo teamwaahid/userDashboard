@@ -1,0 +1,214 @@
+.app-card {
+	.inner{
+		.card-body-contents{
+			display: flex;
+			justify-content: space-between;
+
+			.user-border{
+				border-right: 1px solid #80808021;
+                height: 100%;
+
+				.user-details{
+					text-align: center;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+	
+					.user-img {
+						width: 150px;
+						height: 150px;
+                        border: 1px solid #80808021;
+                        border-radius: 8px;
+		
+						img {
+							width: 100%;
+						}
+					}
+	
+					.buy-wishlist-counter{
+						width: 50%;
+						display: flex;
+						justify-content: space-between;
+					}
+				}
+			}
+
+
+			.user-contact-details{
+				h3{
+					margin: 20px 0px;
+				}
+				h6{
+					margin-top: 20px;
+				}
+				.icon{
+					border: 1px solid #80808021;
+					padding: 10px;
+					border-radius: 10px;
+					margin-right: 5px;
+                    background-color: #15a36330;
+                    color: #15a362;
+				}
+				.fa-facebook-f {
+					border: 1px solid #80808021;
+					padding: 10px 13px;
+					border-radius: 10px;
+					margin-right: 5px;
+                    background-color: #15a36330;
+                    color: #15a362;
+				}
+			}
+
+            .user-profile-setings-tab{
+                display: block;
+
+                // tab-setting button
+                .btn_part{
+                    border-bottom: 1px solid #80808021;
+                    padding-bottom: 20px;
+                    transition: 0.5s;
+
+                    // profile btn
+                    #user-profile-details {
+                        margin-right: 20px;
+                        cursor: pointer;
+                        font-weight: 600;
+                    }
+                    #user-profile-settings {
+                        cursor: pointer;
+                        font-weight: 600;
+                    }
+                }
+
+                // tab-setting view content
+                .btn-data-view{
+                    // profile contents
+                    .profile-details{
+                        transition: 0.5s;
+    
+                        // bought wish card area
+                        .bought-wish-card-area{
+                            .user-buying-cards {
+                                display: flex;
+                                justify-content: center;
+                
+                                .bought_wish_icon{
+                                    font-size: 30px;
+                                    margin-right: 25px;
+                                    border: 1px solid #80808021;
+                                    padding: 15px;
+                                    border-radius: 8px;
+                                    // background-color: #15a36330;
+                                    color: white;
+                                }
+                            }
+                        }
+    
+                        // latest notification area
+                        .latest-notification-area{
+
+                            .notification_header{
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 20px;
+                                border-bottom: 1px solid #80808021;
+                                z-index: 1111;
+            
+                                div{
+                                    i{
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+        
+                            .notification_items{
+                                overflow: hidden;
+                                z-index: 1;
+                                height: 400px;
+
+                                .single_notification {
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    .user-notification-cards {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                        
+                                        .user_notification_icon{
+                                            font-size: 35px;
+                                            margin-right: 25px;
+                                            border: 1px solid #80808021;
+                                            padding: 10px;
+                                            border-radius: 8px;
+                                            background-color: #15a36330;
+                                            color: #15a362;
+                                        }
+                                    }
+                                }
+                                .time{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    p{
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                            /* scroll bar width */
+                            ::-webkit-scrollbar {
+                                width: 3px;
+                            }
+                            ::-webkit-scrollbar-track {
+                                box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+                                border-radius: 10px;
+                            }
+                            ::-webkit-scrollbar-thumb {
+                                background: #D6D6D6;
+                                border-radius: 10px;
+                            }
+                            .notification_items:hover{
+                                overflow-y: scroll;
+                            }
+                        }
+                    }
+
+                    // setting contents
+                    .settings-details{
+                        transition: 0.5s;
+                        .user_img_upload{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            label{
+                                font-weight: 600;
+                            }
+
+                            .img_title {
+                                width: 25%;
+                            }
+                        }
+
+                        .setting-form-data{
+                            label{
+                                font-weight: 600;
+                            }
+                            button{
+                                background-color: #15a36330;
+                                color: #15a362;;
+                            }
+                        }
+                    }
+                }
+            }
+		}
+	}
+}
+
+
+.activeClass{
+    border-bottom: 2px solid #15a362;
+    padding-bottom: 21px;
+}
