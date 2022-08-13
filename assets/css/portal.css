@@ -12285,6 +12285,39 @@ small, .small {
   font-size: 14px;
 }
 
+.inner_track_order {
+  margin: 10px 0;
+}
+.inner_track_order form {
+  margin: 20px 0;
+}
+.inner_track_order form .trackOrderInputArea {
+  display: flex;
+  justify-content: space-between;
+}
+.inner_track_order form .trackOrderInputArea div {
+  flex-basis: 32%;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .inner_track_order form .trackOrderInputArea {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.inner_track_order form button {
+  border: none;
+  outline: none;
+  background: #15a362;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .inner_track_order form button {
+    width: 100%;
+  }
+}
+
 .cursor-pointer {
   cursor: pointer !important;
 }
@@ -12457,4 +12490,13 @@ small, .small {
     font-size: 10px;
     padding: 10px 24px;
   }
+}
+.reviw_input_field {
+  border: 1px solid green;
+  outline: none;
+  border-radius: 4px;
+}
+
+#reviw_ratings_icons {
+  color: rgb(255, 174, 0);
 }
